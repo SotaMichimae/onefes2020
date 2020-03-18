@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* CSS Document */
+.single_container {
+	padding-top: 105px;
+	padding-bottom: 70px;
+}
+.single_container .title {
+	border-bottom: 1px solid #000000;
+	padding: 0 0 15px 0;
+	margin: 0 0 15px 0;
+}
+.single_container .title h3 {
+	font-size: 18px;
+	line-height: 1.8;
+}
+.single_container .title time {
+	display: block;
+	font-size: 12px;
+	color: #aaaaaa;
+}
+.single_container .content {
+	font-size: 15px;
+	line-height: 2.1;
+}
+.single_container .content h4 {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+.single_container .content img {
+	width: 100%!important;
+	max-width: 600px!important;
+	height: auto!important;
+	margin: 15px 0 15px 0!important;
+}
+.single_container .content a {
+	text-decoration: underline;
+	color: #408CFA;
+	transition: 0.6s;
+}
+.single_container .content a:hover {
+	text-decoration: none;
+	color: #000000;
+	transition: 0.6s;
+}
+/* pager */
+.pager_container {
+	margin-bottom: 40px;
+}
+.pre_next .page-numbers {
+	border: 1px solid #000;
+	padding: 5px 10px;
+	margin: 0 10px 0 0;
+	color: #000000;
+	background: #ffffff;
+}
+.pre_next .page-numbers:hover {
+	opacity: 0.8;
+	background-color: #eeeeee;
+}
+.pre_next .dots {
+	background: #ffffff!important;
+	border: 0!important;
+}
+.pre_next .dots:hover {
+	opacity: 1!important;
+	background: #ffffff!important;
+}
+.pre_next .current {
+	background-color: #000;
+	color: #fff;
+}
+.pre_next {
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 0 auto;
+	display: block;
+}
+.pre_next a {
+	border: 1px solid #000000;
+	color: #000000;
+	padding: 5px 20px 5px 20px;
+	background: #ffffff;
+	transition: 0.3s;
+}
+.pre_next a:hover {
+	background: #000000;
+	color: #ffffff;
+	transition: 0.3s;
+}
+.pre_next .prev {
+	align-self: flex-start;
+	align-content: flex-start;
+}
+.pre_next .next {
+	align-self: flex-end;
+	align-content: flex-end;
+}
+.single_pager {
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto 40px auto;
+}
+.single_pager a {
+	border: 1px solid #000000;
+	color: #000000;
+	padding: 5px 20px 5px 20px;
+	background: #ffffff;
+	transition: 0.3s;
+}
+.single_pager a:hover {
+	background: #000000;
+	color: #ffffff;
+	transition: 0.3s;
+}
+.single_pager .prev {
+	align-self: flex-start;
+	align-content: flex-start;
+}
+.single_pager .pre_next .next {
+	align-self: flex-end;
+	align-content: flex-end;
+}
+.view_container {
+	padding-top: 105px;
+	padding-bottom: 70px;
+}
+.view_container .view_box .inner:last-of-type {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border-bottom: 0;
+}
+.view_container .view_box .inner .info {
+	width: 100%;
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #000000;
+}
+.view_container .view_box .inner .info h3 {
+	font-size: 16px;
+	line-height: 1.8;
+}
+.view_container .view_box .inner .info time {
+	display: block;
+	font-size: 13px;
+}
