@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*
+Theme Name: ONE FES 2020
+Author: Lead Design inc.
+Description: All
+*/
+/* CSS Document */
+
+/*reset*/
+@import url("css/reset.css");
+/*common*/
+@import url("css/common.css");
+/*header*/
+@import url("css/header.css");
+/*footer*/
+@import url("css/footer.css");
+/*index*/
+@import url("css/top.css");
+/*about*/
+@import url("css/about.css");
+/*map*/
+@import url("css/map.css");
+/*contact*/
+@import url("css/contact.css");
+/*single*/
+@import url("css/single.css");
+/*fonts*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
