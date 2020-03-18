@@ -1,0 +1,383 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+	font-size: 100%;
+	/*ベース10px*/
+	line-height: 1.7;
+}
+body {
+	width: 100%;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #2b2d3b;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 21px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+h2 {
+	font-size: 18px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+h3 {
+	font-size: 18px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+h4 {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #2b2d3b;
+}
+.visible-desktop {
+	display: none !important;
+}
+.mt0 {
+	margin-top: 0px !important;
+}
+.mt5 {
+	margin-top: 5px !important;
+}
+.mt10 {
+	margin-top: 10px !important;
+}
+.mt15 {
+	margin-top: 15px !important;
+}
+.mt20 {
+	margin-top: 20px !important;
+}
+.mt30 {
+	margin-top: 30px !important;
+}
+.mt40 {
+	margin-top: 40px !important;
+}
+.mt50 {
+	margin-top: 50px !important;
+}
+.mr0 {
+	margin-right: 0px !important;
+}
+.mr10 {
+	margin-right: 10px !important;
+}
+.mr20 {
+	margin-right: 20px !important;
+}
+.mr30 {
+	margin-right: 30px !important;
+}
+.mr40 {
+	margin-right: 40px !important;
+}
+.mr50 {
+	margin-right: 50px !important;
+}
+.mb0 {
+	margin-bottom: 0px !important;
+}
+.mb5 {
+	margin-bottom: 5px !important;
+}
+.mb10 {
+	margin-bottom: 10px !important;
+}
+.mb15 {
+	margin-bottom: 15px !important;
+}
+.mb20 {
+	margin-bottom: 20px !important;
+}
+.mb30 {
+	margin-bottom: 30px !important;
+}
+.mb40 {
+	margin-bottom: 40px !important;
+}
+.mb50 {
+	margin-bottom: 50px !important;
+}
+.ml0 {
+	margin-left: 0px !important;
+}
+.ml10 {
+	margin-left: 10px !important;
+}
+.ml20 {
+	margin-left: 20px !important;
+}
+.ml30 {
+	margin-left: 30px !important;
+}
+.ml40 {
+	margin-left: 40px !important;
+}
+.ml50 {
+	margin-left: 50px !important;
+}
+.pt0 {
+	padding-top: 0px !important;
+}
+.pt10 {
+	padding-top: 10px !important;
+}
+.pt20 {
+	padding-top: 20px !important;
+}
+.pt30 {
+	padding-top: 30px !important;
+}
+.pt40 {
+	padding-top: 40px !important;
+}
+.pt50 {
+	padding-top: 50px !important;
+}
+.pr0 {
+	padding-right: 0px !important;
+}
+.pr10 {
+	padding-right: 10px !important;
+}
+.pr20 {
+	padding-right: 20px !important;
+}
+.pr30 {
+	padding-right: 30px !important;
+}
+.pr40 {
+	padding-right: 40px !important;
+}
+.pr50 {
+	padding-right: 50px !important;
+}
+.pb0 {
+	padding-bottom: 0px !important;
+}
+.pb10 {
+	padding-bottom: 10px !important;
+}
+.pb20 {
+	padding-bottom: 20px !important;
+}
+.pb30 {
+	padding-bottom: 30px !important;
+}
+.pb40 {
+	padding-bottom: 40px !important;
+}
+.pb50 {
+	padding-bottom: 50px !important;
+}
+.pl0 {
+	padding-left: 0px !important;
+}
+.pl10 {
+	padding-left: 10px !important;
+}
+.pl20 {
+	padding-left: 20px !important;
+}
+.pl30 {
+	padding-left: 30px !important;
+}
+.pl40 {
+	padding-left: 40px !important;
+}
+.pl50 {
+	padding-left: 50px !important;
+}
+/*
+## t_l t_c t_r
+ 
+文字の揃え指定
+ 
+```
+	<p class="t_l">text align left</p>
+	<p class="t_c">text align center</p>
+	<p class="t_r">text align right</p>
+	
+```
+*/
+.t_l {
+	text-align: left !important;
+}
+.t_c {
+	text-align: center !important;
+}
+.t_r {
+	text-align: right !important;
+}
+@media only screen and (max-width: 768px) {
+  .sp-t_l {
+	  text-align: left !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sp-t_c {
+	  text-align: center !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sp-t_r {
+	  text-align: right !important;
+  }
+}
+.sp_only {
+	display: none;
+	visibility: hidden;
+}
+@media screen and (max-width: 640px) {
+	.sp_only {
+		display: block;
+		visibility: visible;
+	}
+}
+
+/* flex */
+.flex {
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+/* animetion */
+.ani {
+	visibility: hidden;
+}
+/* common layout */
+.common_inner {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto 0 auto;
+}
+.middle_inner {
+	max-width: 620px;
+	width: 100%;
+	margin: 0 auto 0 auto; 
+}
+.bg_white {
+	background: #ffffff;
+}
+/* child common */
+.child_head {
+	background: #009ee2;
+	position: relative;
+	padding-top:130px;
+	padding-bottom: 60px;
+}
+.child_head .title {
+	width: 100%;
+}
+.child_head .title img {
+	height: 35px;
+	margin: 0 auto 0 auto;  
+}
+.child_head::before,
+.child_head::after {
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
+	position: absolute;
+}
+.child_head::before {
+	background-image: url("../img/about/bg_topleft.svg");
+	background-position: top;
+	top: 0;
+	left: 0;
+}
+.child_head::after {
+	background-image: url("../img/about/bg_topright.svg");
+	background-position: top;
+	top: 0;
+	right: 0;
+}
+.breadcrumb {
+	background: #009ee2;
+	margin: 0 auto 0 auto;
+	justify-content: flex-start;
+	align-items: center;
+}
+.breadcrumb ul {
+	width: 100%;
+	padding-bottom: 15px;
+}
+.breadcrumb ul li {
+	margin: 0 5px 0 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+	transition: .6s;
+	max-width: 120px;
+}
+.breadcrumb ul li:first-child {
+	margin: 0 5px 0 0;
+}
+.breadcrumb ul li:last-child {
+	margin: 0 0 0 5px;
+}
+.breadcrumb ul li a {
+	position: relative;
+	font-size: 12px;
+	padding: 0 15px 0 15px;
+	transition: .6s;
+}
+.breadcrumb ul li a::before {
+	position: absolute;
+	content: ">";
+	top: -1px;
+	right: 0px;
+}
+.breadcrumb ul li:last-child a::before {
+	content: "";
+}
+.breadcrumb ul li:hover a {
+	color: #ffffff;
+	transition: .6s;
+}
+.breadcrumb .home {
+	font-weight: 700;
+}
+@media only screen and (max-width: 620px) {
+	.common_inner {
+		max-width: calc(100% - 60px);
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+  .middle_inner {
+		max-width: calc(100% - 60px);
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	/* child common */
+	.child_head {
+		padding-top: 120px;
+		padding-bottom: 50px;
+	}
+	.child_head::before,
+	.child_head::after {
+		max-width: 180px;
+		height: 180px;
+	}
+	.child_head .title {
+	}
+	.child_head .title img {
+		height: 25px;
+	}
+}
