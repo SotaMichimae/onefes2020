@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <title>TITLE</title>
+    <meta name="description" content="ディスクリプション" />
+    <link rel="canonical" href="URL" />
+    <link rel="next" href="URL" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body ontouchstart="">
+	<header>
+		<div class="important">
+			<a href="">【重要】新型コロナウイルス感染症(COVID-19)の対応について</a>
+		</div>
+		<div class="inner">
+			<ul class="toggle">
+				<li id="menu" class="menu">MENU</li>
+				<li class="ticket">
+					<a href=""><img src="img/toggle_ticket.svg" alt="チケット購入はこちら"></a>
+				</li>
+			</ul>
+			<nav id="head_nav" class="head_nav">
+				<ul>
+					<li><a href=""><h1><img src="img/logo_white.svg" alt="お知らせ名|富山県射水市（新湊）のONE FES(ワンフェス)2020"></h1></a></li>
+					<li><a href="">ONEFESとは</a></li>
+					<li><a href="">チケットの購入</a></li>
+					<li><a href="">会場マップ</a></li>
+					<li><a href="">会場への行き方</a></li>
+					<li><a href="">お問い合わせ</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- // single/category page -->
+		<div class="child_head">
+			<h2 class="title"><img src="img/single/news_title.svg" alt="お知らせ"></h2>
+		</div>
+		<!-- single/category page // -->
+    </header>
+	<section class="single_container">
+		<div class="common_inner">
+			<div class="title">
+				<h3>TITLE TITLE TITLE TITLE TITLE TITLE</h3>
+				<time>2019.00.00</time>
+			</div>
+			<div class="content">
+				<h4>sub title</h4>
+				ここに中身が入ります。<br>
+				改行したらこんな感じです。
+				<img src="img/artists_02.jpg">
+				<a href="">これはリンクです。</a>
+			</div>
+		</div>
+	</section>
+	<section class="pager_container">
+		<div class="common_inner">
+			<nav class="single_pager flex">	
+				<a class="pre" href="" rel="prev">前へ</a>
+				<a class="next" href="" rel="next">次へ</a>
+			</nav>
+		</div>
+	</section>
+	<footer>
+		<div class="page_top"><img src="img/page_top.svg" alt="トップへ戻る"></div>
+		<div class="common_inner">
+			<p>&copy; 2020 ONEFES</p>
+		</div>
+	</footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+    <script type="text/javascript" src="js/ofi.min.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+        objectFitImages();
+    </script>
+    <script>
+        $(function() {
+            $('.menu').click(function() {
+                $(this).toggleClass('open');
+                if ($(this).hasClass('open')) {
+                    $('.head_nav').addClass('open');
+                }
+                else {
+                    $('.head_nav').removeClass('open');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            var pagetop = $('.page_top');
+            pagetop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 300) {
+                    pagetop.addClass('true');
+                } else {
+                    pagetop.removeClass('true');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: true,
+                prevArrow: '<div class="prev"><img src="img/arrow_prev.svg"></div>',
+                nextArrow: '<div class="next"><img src="img/arrow_next.svg"></div>',
+                dots: false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.ani1', {
+            easing: 'ease', //イージング('ease' 'ease-in' 'ease-out' 'ease-in-out'など)
+            origin: 'bottom', //アニメーションの基点
+            duration: 1500, //アニメーションの時間
+            distance: '0px', //アニメーションの距離
+            delay: 0, //アニメーションの遅延
+            useDelay: 'always', //遅延の条件('always' 'once' 'onload')
+            opacity: 0, //アニメーション開始時の透明度
+            scale: 0.9, //アニメーション開始時のスケール
+            rotate: {
+                x: 0,
+                y: 0,
+                z: 0
+            }, //アニメーション開始時の傾き
+            mobile: true, //falseにするとモバイルでのアニメーション停止
+            reset: false, //trueにすると表示の度にアニメーション再生
+            viewFactor: 0.2, //アニメーションを開始するために必要な要素の表示割合
+            viewOffset: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            } //要素のオフセット。固定ヘッダーなどがある場合に指定
+        });
+        sr.reveal('.ani2', {
+            easing: 'ease', //イージング('ease' 'ease-in' 'ease-out' 'ease-in-out'など)
+            origin: 'right', //アニメーションの基点
+            duration: 1500, //アニメーションの時間
+            distance: '50px', //アニメーションの距離
+            delay: 0, //アニメーションの遅延
+            useDelay: 'always', //遅延の条件('always' 'once' 'onload')
+            opacity: 0, //アニメーション開始時の透明度
+            scale: 0.9, //アニメーション開始時のスケール
+            rotate: {
+                x: 0,
+                y: 0,
+                z: 0
+            }, //アニメーション開始時の傾き
+            mobile: true, //falseにするとモバイルでのアニメーション停止
+            reset: false, //trueにすると表示の度にアニメーション再生
+            viewFactor: 0.2, //アニメーションを開始するために必要な要素の表示割合
+            viewOffset: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            } //要素のオフセット。固定ヘッダーなどがある場合に指定
+        });
+        sr.reveal('.ani3', {
+            easing: 'ease', //イージング('ease' 'ease-in' 'ease-out' 'ease-in-out'など)
+            origin: 'left', //アニメーションの基点
+            duration: 1500, //アニメーションの時間
+            distance: '50px', //アニメーションの距離
+            delay: 0, //アニメーションの遅延
+            useDelay: 'always', //遅延の条件('always' 'once' 'onload')
+            opacity: 0, //アニメーション開始時の透明度
+            scale: 0.9, //アニメーション開始時のスケール
+            rotate: {
+                x: 0,
+                y: 0,
+                z: 0
+            }, //アニメーション開始時の傾き
+            mobile: true, //falseにするとモバイルでのアニメーション停止
+            reset: false, //trueにすると表示の度にアニメーション再生
+            viewFactor: 0.2, //アニメーションを開始するために必要な要素の表示割合
+            viewOffset: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            } //要素のオフセット。固定ヘッダーなどがある場合に指定
+        });
+    </script>
+    <script>
+        $(function() {
+            $('.js-modal-open').each(function() {
+                $(this).on('click', function() {
+                    var target = $(this).data('target');
+                    var modal = document.getElementById(target);
+                    $(modal).fadeIn();
+                    return false;
+                });
+            });
+            $('.js-modal-close').on('click', function() {
+                $('.js-modal').fadeOut();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
