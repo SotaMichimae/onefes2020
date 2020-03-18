@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* CSS Document */
+/*マップ*/
+.map_contents {
+	width: 100%;
+	background-color: #009ee2;
+}
+.map_contents .map_picture {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+}
+.map_contents p {
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	font-weight: 700;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	color: #ffffff;
+}
+/*
+.map_contents .map_picture picture:first-of-type img {
+	padding-bottom: 50px;
+}
+*/
+/*バススケジュール1*/
+.bus_schedule {
+	background-size: 15px 15px;
+	background-image: radial-gradient(#e5f5fc 15%, transparent 20%),radial-gradient(#e5f5fc 15%, transparent 20%);
+	background-position: 0 0, 7.5px 7.5px;
+	padding-top: 105px;
+	padding-bottom: 70px;
+}
+.bus_schedule .bus_title {
+	font-size: 30px;
+	font-weight: bold;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	border: 2px #000000 solid;
+	border-radius: 50px;
+}
+.bus_schedule .bus_title span {
+	font-size: 15px;
+	vertical-align: 20%;
+	padding-right: 15px;
+	letter-spacing: 1px;
+}
+.bus_schedule h3 {
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	font-weight: 700;
+	letter-spacing: 3px;
+	padding-bottom: 15px;
+}
+.bus_schedule .price {
+	font-size: 20px;
+	font-weight: bold;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.bus_schedule .price span {
+	font-size: 12px;
+	padding-left: 10px;
+}
+.bus_schedule .bus_table {
+	width: 100%;
+	font-weight: bold;
+	font-weight: 700;
+	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: solid 2px #009ee2;
+	margin-bottom: 30px;
+}
+.bus_schedule .bus_table th,
+.bus_schedule .bus_table td {
+	border-right: 1px solid #ffffff;
+}
+.bus_schedule .bus_table th:last-of-type,
+.bus_schedule .bus_table td:last-of-type {
+	border-right: 0;
+}
+.bus_schedule .bus_table th,
+.bus_schedule .bus_table td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.bus_schedule .bus_table tr {
+	font-size: 12px;
+}
+.bus_schedule .bus_table tr:nth-of-type(odd) {
+	background-color: #e5f5fc;
+}
+.bus_schedule .bus_table tr:nth-of-type(even) {
+	background-color: #ccecf9;
+}
+.bus_schedule .bus_table tr:nth-of-type(2) {
+	background-color: #009ee2!important;
+	color: #ffffff;
+	font-weight: bold;
+	font-weight: 700;
+}
+.bus_schedule .bus_table:first-of-type tr:first-of-type {
+	background: #fff000;
+}
+.bus_schedule .bus_table:nth-of-type(2) tr:first-of-type {
+	background: #f0b432;
+}
+.bus_schedule .train_table {
+	width: 100%;
+	font-weight: bold;
+	font-weight: 700;
+	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: solid 2px #009ee2;
+	margin-bottom: 30px;
+}
+.bus_schedule .train_table .table_title {
+	background-color: #009ee2!important;
+	color: #ffffff!important;
+}
+.bus_schedule .train_table tr th:first-of-type {
+	background: #ffffff;
+	border-bottom: 1px solid #009ee2!important;
+	font-weight: bold;
+	font-weight: 700;
+}
+.bus_schedule .train_table tr th:last-of-type {
+	border-bottom: 0;
+}
+.bus_schedule .train_table th,
+.bus_schedule .train_table td {
+	border-right: 1px solid #ffffff;
+}
+.bus_schedule .train_table th:last-of-type,
+.bus_schedule .train_table td:last-of-type {
+	border-right: 0;
+}
+.bus_schedule .train_table th,
+.bus_schedule .train_table td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.bus_schedule .train_table tr {
+	font-size: 12px;
+}
+.bus_schedule .train_table tr span {
+	display: block;
+	font-size: 10px;
+}
+.bus_schedule .train_table tr .red {
+	color: #ff0000;
+}
+.bus_schedule .train_table tr .blue {
+	color: #009ee2;
+}
+.bus_schedule .train_table tr:nth-of-type(odd) {
+	background-color: #e5f5fc;
+}
+.bus_schedule .train_table tr:nth-of-type(even) {
+	background-color: #ccecf9;
+}
+.bus_schedule .map_message p {
+	font-size: 13px;
+	line-height: 2.1;
+	font-weight: bold;
+	font-weight: 700;
+}
+@media only screen and (max-width : 620px){
+   /*マップ*/
+	.map_contents .map_picture picture:first-of-type img {
+		padding-bottom: 40px;
+	}
+	/*バススケジュール1*/
+	.bus_schedule {
+		padding-top: 45px;
+		padding-bottom: 30px;
+	}
+	.bus_schedule .bus_title {
+		font-size: 21px;
+	}
+	.bus_schedule .bus_title span {
+		display: block;
+		font-size: 12px;
+		vertical-align: 0;
+		padding-right: 0;
+	}
+	.bus_schedule h3 {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+	.bus_schedule .price {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	.bus_schedule .price span {
+		text-align: right;
+		font-size: 10px;
+		padding-left: 5px;
+	}
+	.bus_schedule .bus_table tr {
+		font-size: 11px;
+	}
+	.bus_schedule .train_table tr {
+		font-size: 11px;
+	}
+	.bus_schedule .map_message p {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 320px) {
+   
+}
